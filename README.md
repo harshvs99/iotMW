@@ -6,3 +6,11 @@
 # iotMW
 The IoT based Microwave is built as a device to provide measured heating for industrial applications
 
+## Problem Statement
+The project is a temperature controlled microwave, for use in bakeries etc. which rely on precise heating setups, while conventional microwaves provide only timer based heatings 
+
+## Design
+The iotMW works to provide a calibrated temperature sensor, stopping only at specified temperatures.
+
+- Peripheral TFT and Buttons: Added using the SPI protocol using an FSM diagram for flow control
+- Temperature Offsets: With rigrous testing, we calculate offsets and builds on it for sensor translation of the algorithm based on input data
