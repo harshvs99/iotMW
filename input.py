@@ -10,9 +10,10 @@ cache.flushdb()
 temp_configure()
 mag_door_configure()
 
-UrlGetToken="http://13.233.240.121/server.microwave/GetToken"
-url="http://13.233.240.121/server.microwave/SetTemp"
-url_setLiveStatus="http://13.233.240.121/server.microwave/SetLiveStatus"
+hostingURL = "localhost:8080" #13.233.240.121
+UrlGetToken="http://"+hostingURL+"/server.microwave/GetToken"
+url="http://"+hostingURL+"/server.microwave/SetTemp"
+url_setLiveStatus="http://"+hostingURL+"/server.microwave/SetLiveStatus"
 header={"Content-Type":"application/json"}
 
 # magnetron on=1
